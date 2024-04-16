@@ -1,0 +1,29 @@
+bootstrap:
+  servers: pkc-p11xm.us-east-1.aws.confluent.cloud:9092
+
+security:
+  protocol: SASL_SSL
+
+sasl:
+  jaas:
+    config: org.apache.common.security.plain.PLainLoginModule required username='4EYXNCWRHTF4IE5V' password='gvfaI7i7JhCw5zxmism4Z/4If3VdPwEKK2sTwcE5mmkyA6Dwp8bYlFMFLPuo0n3e'
+  mechanism: PLAIN
+
+client:
+  dns:
+    lookup: use_all_dns_ips
+
+session:
+  timeout:
+    ms: 45000
+
+acks: all
+
+key:
+  serializer: org.apache.kafka.common.serialization.StringSerializer
+  deserializer: org.apache.kafka.common.serialization.StringDeserializer
+
+value:
+  serializer: org.apache.kafka.common.serialization.StringSerializer
+  deserializer: org.apache.kafka.common.serialization.StringDeserializer
+

@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.kinandcarta'
+version = '1.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    //logging
+    implementation "org.slf4j:slf4j-nop:2.0.13"
+
+    //apache kafka
+    implementation "org.apache.kafka:kafka-clients:3.7.0"
+
+    //jackson-databind
+    implementation "com.fasterxml.jackson.core:jackson-databind:2.17.0"
+    implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.17.0'
+
+
+    testImplementation platform('org.junit:junit-bom:5.10.2')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+
+test {
+    useJUnitPlatform()
+}
