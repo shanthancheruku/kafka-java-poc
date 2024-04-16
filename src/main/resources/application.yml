@@ -6,7 +6,7 @@ security:
 
 sasl:
   jaas:
-    config: org.apache.common.security.plain.PLainLoginModule required username='4EYXNCWRHTF4IE5V' password='gvfaI7i7JhCw5zxmism4Z/4If3VdPwEKK2sTwcE5mmkyA6Dwp8bYlFMFLPuo0n3e'
+    config: org.apache.common.security.plain.PLainLoginModule required username=<CLUSTER API KEY> password=<CLUSTER SECRET>;
   mechanism: PLAIN
 
 client:
